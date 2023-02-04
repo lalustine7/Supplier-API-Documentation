@@ -2,5 +2,5 @@ sphinx==5.3.0
 sphinx_rtd_theme==1.1.1
 readthedocs-sphinx-search==0.1.1
 sphinx-prompt==1.5.0
-sphinx-code-tabs
-sphinx-tabs
+sphinx-code-tabs==0.5.3
+sphinx-tabs==3.4.1

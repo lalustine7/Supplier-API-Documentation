@@ -18,7 +18,8 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     "sphinx-prompt",
-    "sphinx-code-tabs"
+    "sphinx-code-tabs",
+    "sphinx-tabs"
 ]
 
 intersphinx_mapping = {

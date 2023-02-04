@@ -13,4 +13,3 @@ Contents
 
   getstock
   updatestock
-  test

@@ -2,19 +2,22 @@ Welcome to Supplier Api Documentation
 =====================================
 
 Suppliers
-+++++++++
+-----------
 
 .. function:: GET /api/v2/stock
 
       Get supplier sku stock details
 
-      **Example request**:
+      Returns example.
 
-      .. prompt:: bash $
+      :statuscode 200: Successful request.
+      :statuscode 400: Bad request.
 
-             curl -H "Authorization: Token <token>" https://data-api-staging.aws.zanui.com.au/v1/stock
+      Example request::
+
+             GET https://data-api-staging.aws.zanui.com.au/v1/stock
       
-      **Example response**:
+      Example response::
 
       .. sourcecode:: js
 

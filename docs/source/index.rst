@@ -8,8 +8,9 @@ Suppliers
 
       Get supplier sku stock details
     
-     :statuscode 200: Successful request
-     :>json integer id: The ID of the build
+     ::statuscode 200: Successful request
+     ::>json integer id: The ID of the build
+     ::statuscode 401:: Unuccessful request
 
       Example request::
 
@@ -18,7 +19,19 @@ Suppliers
       :statuscode 200: Successful request
       :>json integer id: The ID of the build
       
-      Example response::
+      Example Successful response::
+        
+        [
+            {
+              "zanui_sku": "string",
+              "supplier_sku": "string",
+              "qty": 0,
+              "name": "string",
+              "zanui_name": "string"
+            }
+        ]
+      
+      Example Unsuccessful response::
         
         [
             {
@@ -32,6 +45,5 @@ Suppliers
 
       Status Codes:: 
         
-        :statuscode 200: Successful request
-
-      :>json integer id: The ID of the build
+        200: Successful request
+        401: Unauthorized Token

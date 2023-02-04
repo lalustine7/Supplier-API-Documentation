@@ -9,10 +9,15 @@ Get Stock
       :header Authorization: Bearer <token>
       :statuscode 200: Successful Operation
       :statuscode 401: Unauthorized Token
-    
-      Example request::
 
-             GET https://data-api-staging.aws.zanui.com.au/v1/stock
+
+      .. tabs::
+
+          .. tab:: Personal Account
+    
+              Example request::
+
+                    GET https://data-api-staging.aws.zanui.com.au/v1/stock
       
       Example Successful response::
         

@@ -4,7 +4,7 @@ Welcome to Supplier Api Documentation
 Suppliers
 +++++++++
 
-.. http:get:: /api/v2/stock
+.. function:: GET /api/v2/stock
 
       Get supplier sku stock details
 

@@ -6,7 +6,7 @@ Get Stock
       Get supplier sku stock details
 
       **Example request**:
-      
+
       .. sourcecode:: http
           
           GET /v1/stock HTTP/1.1
@@ -19,7 +19,7 @@ Get Stock
         
           HTTP/1.1 200 OK
           Vary: Accept
-          Content-Type: text/javascript
+          Content-Type: application/json
 
           [
               {

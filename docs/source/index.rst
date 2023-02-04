@@ -7,11 +7,16 @@ Suppliers
 .. function:: GET /api/v2/stock
 
       Get supplier sku stock details
-      :statuscode 200: Successful request
-      
+    
+     :statuscode 200: Successful request
+     :>json integer id: The ID of the build
+
       Example request::
 
              GET https://data-api-staging.aws.zanui.com.au/v1/stock
+
+      :statuscode 200: Successful request
+      :>json integer id: The ID of the build
       
       Example response::
         
@@ -28,3 +33,5 @@ Suppliers
       Status Codes:: 
         
         :statuscode 200: Successful request
+
+      :>json integer id: The ID of the build

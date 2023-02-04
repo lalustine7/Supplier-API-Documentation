@@ -5,31 +5,21 @@ Get Stock
 
       Get supplier sku stock details
 
-      :header Content-Type: application/json
-      :header Authorization: Bearer <token>
-      :statuscode 200: Successful Operation
-      :statuscode 401: Unauthorized Token
-
       **Example request**:
-      .. tabs::
-
-          .. code-tab:: Staging
-
-                    GET https://data-api-staging.aws.zanui.com.au/v1/stock
-
-          .. tab:: Production
-
-                    GET https://data-api.aws.zanui.com.au/v1/stock
-
-          .. code-tab:: bash
-
-              $ curl -H "Authorization: Bearer <token>" https://data-api-staging.aws.zanui.com.au/v1/stock
+      .. sourcecode:: http
           
+          GET /v1/stock HTTP/1.1
+          Host: https://data-api-staging.aws.zanui.com.au
+          Accept: application/json
       
-      **Example Successful response**:
+      **Example response**:
 
-      .. sourcecode:: json
+      .. sourcecode:: http
         
+          HTTP/1.1 200 OK
+          Vary: Accept
+          Content-Type: text/javascript
+
           [
               {
                 "zanui_sku": "string",
@@ -40,13 +30,10 @@ Get Stock
               }
           ]
       
-      Example Unsuccessful response::
-        
-        {
-          "error": "string"
-        }
-
-      Status Codes:: 
-        
-        200: Successful Operation
-        401: Unauthorized Token
+      :reqheader Accept: the response content type depends on
+                          :mailheader:`Accept` header
+      :reqheader Authorization: optional OAuth token to authenticate
+      :resheader Content-Type: this depends on :mailheader:`Accept`
+        header of request
+      :statuscode 200: Successful Operation
+      :statuscode 401: Unauthorized Token

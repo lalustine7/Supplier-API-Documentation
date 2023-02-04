@@ -6,23 +6,24 @@ Get Stock
       Get supplier sku stock details
 
       **Example request**:
-      .. tabs::
 
-          .. tab:: Staging
+        .. tabs::
 
-            .. sourcecode:: http
-                
-                GET /v1/stock HTTP/1.1
-                Host: https://data-api-staging.aws.zanui.com.au
-                Accept: application/json
+            .. tab:: Staging
 
-          .. tab:: Production
+                .. sourcecode:: http
+                    
+                    GET /v1/stock HTTP/1.1
+                    Host: https://data-api-staging.aws.zanui.com.au
+                    Accept: application/json
 
-            .. sourcecode:: http
-                
-                GET /v1/stock HTTP/1.1
-                Host: https://data-api.aws.zanui.com.au
-                Accept: application/json
+            .. tab:: Production
+
+                .. sourcecode:: http
+                    
+                    GET /v1/stock HTTP/1.1
+                    Host: https://data-api.aws.zanui.com.au
+                    Accept: application/json
       
       **Example response**:
 

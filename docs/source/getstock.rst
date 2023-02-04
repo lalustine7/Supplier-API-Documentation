@@ -7,23 +7,23 @@ Get Stock
 
       **Example request**:
 
-        .. tabs::
+      .. tabs::
 
-            .. tab:: Staging
+          .. tab:: Staging
 
-                .. sourcecode:: http
-                    
-                    GET /v1/stock HTTP/1.1
-                    Host: https://data-api-staging.aws.zanui.com.au
-                    Accept: application/json
+              .. sourcecode:: http
+                  
+                  GET /v1/stock HTTP/1.1
+                  Host: https://data-api-staging.aws.zanui.com.au
+                  Accept: application/json
 
-            .. tab:: Production
+          .. tab:: Production
 
-                .. sourcecode:: http
-                    
-                    GET /v1/stock HTTP/1.1
-                    Host: https://data-api.aws.zanui.com.au
-                    Accept: application/json
+              .. sourcecode:: http
+                  
+                  GET /v1/stock HTTP/1.1
+                  Host: https://data-api.aws.zanui.com.au
+                  Accept: application/json
       
       **Example response**:
 
@@ -43,6 +43,18 @@ Get Stock
               }
           ]
       
+      **Example unsuccessful response**:
+
+      .. sourcecode:: http
+        
+          HTTP/1.1 401 OK
+          Content-Type: application/json
+
+          {
+            "error": "string"
+          }
+          
+
       :reqheader Accept: the response content type depends on
                           :mailheader:`Accept` header
       :reqheader Authorization: optional OAuth token to authenticate

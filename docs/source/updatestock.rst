@@ -77,6 +77,7 @@ Update Stock
           {
             "error": "string"
           }
+          
       
       :reqheader Accept: the response content type depends on
                           :mailheader:`Accept` header

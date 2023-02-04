@@ -7,39 +7,39 @@ Update Stock
 
       **Example request**:
 
-        .. tabs::
+      .. tabs::
 
-            .. tab:: Staging
+          .. tab:: Staging
 
-                .. sourcecode:: http
-                    
-                    POST /v1/stock HTTP/1.1
-                    Host: https://data-api-staging.aws.zanui.com.au
-                    Accept: application/json
-                    Content-Type: application/json
+              .. sourcecode:: http
+                  
+                  POST /v1/stock HTTP/1.1
+                  Host: https://data-api-staging.aws.zanui.com.au
+                  Accept: application/json
+                  Content-Type: application/json
 
-                    [
-                      {
-                        "zanui_sku": "string",
-                        "soh": 0
-                      }
-                    ]
+                  [
+                    {
+                      "zanui_sku": "string",
+                      "soh": 0
+                    }
+                  ]
 
-            .. tab:: Production
+          .. tab:: Production
 
-                .. sourcecode:: http
-                    
-                    POST /v1/stock HTTP/1.1
-                    Host: https://data-api.aws.zanui.com.au
-                    Accept: application/json
-                    Content-Type: application/json
+              .. sourcecode:: http
+                  
+                  POST /v1/stock HTTP/1.1
+                  Host: https://data-api.aws.zanui.com.au
+                  Accept: application/json
+                  Content-Type: application/json
 
-                    [
-                      {
-                        "zanui_sku": "string",
-                        "soh": 0
-                      }
-                    ]
+                  [
+                    {
+                      "zanui_sku": "string",
+                      "soh": 0
+                    }
+                  ]
 
 
       
@@ -67,7 +67,7 @@ Update Stock
             ]
           }
 
-     **Example unsuccessful response**:
+      **Example unsuccessful response**:
 
       .. sourcecode:: http
         

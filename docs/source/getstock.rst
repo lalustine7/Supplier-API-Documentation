@@ -6,6 +6,7 @@ Get Stock
       Get supplier sku stock details
 
       **Example request**:
+      
       .. sourcecode:: http
           
           GET /v1/stock HTTP/1.1

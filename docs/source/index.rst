@@ -9,6 +9,7 @@ Contents
 --------
 
 .. toctree:: 
+  :caption: Supplier Stock
 
   getstock
   updatestock

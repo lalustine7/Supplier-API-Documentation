@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Supplier API Documentation'
+copyright = '2023, Lal Kumar Rai'
+author = 'Lal Kumar Rai'
 
 release = '0.1'
 version = '0.1.0'

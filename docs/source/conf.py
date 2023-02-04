@@ -16,12 +16,15 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx'
+    'sphinx.ext.intersphinx',
+     "sphinxcontrib.httpdomain",
+     "sphinx-prompt"
 ]
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+    "pip": ("https://pip.pypa.io/en/stable/", None),
 }
 intersphinx_disabled_domains = ['std']
 

@@ -1,8 +1,5 @@
-Welcome to Supplier Api Documentation
-=====================================
-
 Get Supplier Stock
--------------------
+===================
 
 .. function:: GET /api/v1/stock
 
@@ -42,7 +39,7 @@ Get Supplier Stock
 
 
 Update Supplier Stock
-----------------------
+======================
 
 .. function:: POST /api/v1/stock
 

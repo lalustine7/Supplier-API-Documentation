@@ -7,6 +7,11 @@ Get Supplier Stock
 .. function:: GET /api/v1/stock
 
       Get supplier sku stock details
+
+      :header Content-Type: application/json
+      :header Authorization: Bearer <token>
+      :statuscode 200: Successful Operation
+      :statuscode 401: Unauthorized Token
     
       Example request::
 
@@ -32,7 +37,7 @@ Get Supplier Stock
 
       Status Codes:: 
         
-        200: Successful request
+        200: Successful Operation
         401: Unauthorized Token
 
 
@@ -43,17 +48,15 @@ Update Supplier Stock
 
       Update supplier sku stock details
 
-      :json param1: Description of first JSON parameter.
-      :json param2: Description of second JSON parameter.
       :header Content-Type: application/json
-      :statuscode 200: Successful request.
-      :statuscode 400: Bad request.
+      :header Authorization: Bearer <token>
+      :statuscode 200: Successful Operation
+      :statuscode 401: Unauthorized Token
     
       Example request::
 
-             POST https://data-api-staging.aws.zanui.com.au/v1/stock
-
-       [
+        POST https://data-api-staging.aws.zanui.com.au/v1/stock
+        [
           {
             "zanui_sku": "string",
             "soh": 0
@@ -83,8 +86,3 @@ Update Supplier Stock
         {
           "error": "string"
         }
-
-      Status Codes:: 
-        
-        200: Successful request
-        401: Unauthorized Token

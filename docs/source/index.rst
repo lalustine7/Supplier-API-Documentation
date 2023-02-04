@@ -8,16 +8,9 @@ Suppliers
 
       Get supplier sku stock details
     
-     ::statuscode 200: Successful request
-     ::>json integer id: The ID of the build
-     ::statuscode 401:: Unuccessful request
-
       Example request::
 
              GET https://data-api-staging.aws.zanui.com.au/v1/stock
-
-      :statuscode 200: Successful request
-      :>json integer id: The ID of the build
       
       Example Successful response::
         
@@ -33,15 +26,9 @@ Suppliers
       
       Example Unsuccessful response::
         
-        [
-            {
-              "zanui_sku": "string",
-              "supplier_sku": "string",
-              "qty": 0,
-              "name": "string",
-              "zanui_name": "string"
-            }
-        ]
+        {
+          "error": "string"
+        }
 
       Status Codes:: 
         

@@ -1,7 +1,7 @@
 Get Stock
 ===================
 
-.. function:: GET /api/v1/stock
+.. http:get:: /api/v1/stock
 
       Get supplier sku stock details
 
@@ -15,28 +15,30 @@ Get Stock
 
           .. tab:: Staging
     
-              Example request::
+              **Example request**:
 
                     GET https://data-api-staging.aws.zanui.com.au/v1/stock
 
           .. tab:: Production
     
-              Example request::
+              **Example request**:
 
                     GET https://data-api.aws.zanui.com.au/v1/stock
           
       
-      Example Successful response::
+      **Example Successful response**:
+
+      .. sourcecode:: json
         
-        [
-            {
-              "zanui_sku": "string",
-              "supplier_sku": "string",
-              "qty": 0,
-              "name": "string",
-              "zanui_name": "string"
-            }
-        ]
+          [
+              {
+                "zanui_sku": "string",
+                "supplier_sku": "string",
+                "qty": 0,
+                "name": "string",
+                "zanui_name": "string"
+              }
+          ]
       
       Example Unsuccessful response::
         

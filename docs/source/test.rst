@@ -9,3 +9,11 @@ Testing Sphinx
 .. prompt:: bash $
 
    curl -H "Authorization: Token 19okmz5k0i6yk17jp70jlnv91v" https://docs.example.com/en/latest/example.html
+
+
+..  http:example:: curl wget httpie python-requests
+
+    GET /Plone/front-page HTTP/1.1
+    Host: localhost:8080
+    Accept: application/json
+    Authorization: Basic YWRtaW46YWRtaW4=

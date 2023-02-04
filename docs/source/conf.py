@@ -19,6 +19,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     "sphinx-prompt",
     "sphinx_tabs.tabs",
+    "sphinxcontrib.httpdomain",
+    "sphinxcontrib.httpexample"
 ]
 
 intersphinx_mapping = {
@@ -36,3 +38,5 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+httpexample_scheme = 'https'

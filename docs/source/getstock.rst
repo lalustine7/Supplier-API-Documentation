@@ -1,4 +1,4 @@
-Get Supplier Stock
+Get Stock
 ===================
 
 .. function:: GET /api/v1/stock

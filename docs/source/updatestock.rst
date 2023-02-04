@@ -1,4 +1,4 @@
-Update Supplier Stock
+Update Stock
 ======================
 
 .. function:: POST /api/v1/stock

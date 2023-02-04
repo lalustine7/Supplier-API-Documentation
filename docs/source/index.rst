@@ -1,22 +1,29 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to Supplier Api Documentation
+=====================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+Suppliers
++++++++++
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+.. http:get:: /api/v2/stock
 
-.. note::
+      Get supplier sku stock details
 
-   This project is under active development.
+      **Example request**:
 
-Contents
---------
+      .. prompt:: bash $
 
-.. toctree::
+             curl -H "Authorization: Token <token>" https://data-api-staging.aws.zanui.com.au/v1/stock
+      
+      **Example response**:
 
-   usage
-   api
+      .. sourcecode:: js
+
+        [
+            {
+               "zanui_sku": "string",
+               "supplier_sku": "string",
+               "qty": 0,
+               "name": "string",
+               "zanui_name": "string"
+            }
+        ]

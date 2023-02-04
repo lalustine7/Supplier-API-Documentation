@@ -15,6 +15,7 @@ Update Stock
                   
                   POST /v1/stock HTTP/1.1
                   Host: https://data-api-staging.aws.zanui.com.au
+                  Authorization: Bearer <token>
                   Accept: application/json
                   Content-Type: application/json
 
@@ -31,6 +32,7 @@ Update Stock
                   
                   POST /v1/stock HTTP/1.1
                   Host: https://data-api.aws.zanui.com.au
+                  Authorization: Bearer <token>
                   Accept: application/json
                   Content-Type: application/json
 
@@ -77,11 +79,11 @@ Update Stock
           {
             "error": "string"
           }
-          
+
       
       :reqheader Accept: the response content type depends on
                           :mailheader:`Accept` header
-      :reqheader Authorization: optional OAuth token to authenticate
+      :reqheader Authorization: Bearer token to authenticate
       :resheader Content-Type: this depends on :mailheader:`Accept`
         header of request
       :statuscode 200: Successful Operation

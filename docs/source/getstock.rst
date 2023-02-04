@@ -15,6 +15,7 @@ Get Stock
                   
                   GET /v1/stock HTTP/1.1
                   Host: https://data-api-staging.aws.zanui.com.au
+                  Authorization: Bearer <token>
                   Accept: application/json
 
           .. tab:: Production
@@ -23,6 +24,7 @@ Get Stock
                   
                   GET /v1/stock HTTP/1.1
                   Host: https://data-api.aws.zanui.com.au
+                  Authorization: Bearer <token>
                   Accept: application/json
       
       **Example response**:
@@ -57,7 +59,7 @@ Get Stock
 
       :reqheader Accept: the response content type depends on
                           :mailheader:`Accept` header
-      :reqheader Authorization: optional OAuth token to authenticate
+      :reqheader Authorization: Bearer token to authenticate
       :resheader Content-Type: this depends on :mailheader:`Accept`
         header of request
       :statuscode 200: Successful Operation

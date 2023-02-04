@@ -13,11 +13,18 @@ Get Stock
 
       .. tabs::
 
-          .. tab:: Personal Account
+          .. tab:: Staging
     
               Example request::
 
                     GET https://data-api-staging.aws.zanui.com.au/v1/stock
+
+          .. tab:: Production
+    
+              Example request::
+
+                    GET https://data-api.aws.zanui.com.au/v1/stock
+          
       
       Example Successful response::
         

@@ -13,3 +13,4 @@ Contents
 
   getstock
   updatestock
+  test

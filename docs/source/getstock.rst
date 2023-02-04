@@ -10,20 +10,20 @@ Get Stock
       :statuscode 200: Successful Operation
       :statuscode 401: Unauthorized Token
 
-
+      **Example request**:
       .. tabs::
 
-          .. tab:: Staging
-    
-              **Example request**:
+          .. code-tab:: Staging
 
                     GET https://data-api-staging.aws.zanui.com.au/v1/stock
 
           .. tab:: Production
-    
-              **Example request**:
 
                     GET https://data-api.aws.zanui.com.au/v1/stock
+
+          .. code-tab:: bash
+
+              $ curl -H "Authorization: Bearer <token>" https://data-api-staging.aws.zanui.com.au/v1/stock
           
       
       **Example Successful response**:
